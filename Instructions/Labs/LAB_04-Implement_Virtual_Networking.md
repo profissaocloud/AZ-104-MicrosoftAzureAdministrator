@@ -48,21 +48,23 @@ In this task, you will create a virtual network with multiple subnets by using t
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource Group | the name of a **new** resource group **az104-04-rg1** |
+    | Resource Group | select the resource group **xxxxx-az104-04-rg1** |
     | Name | **az104-04-vnet1** |
     | Region | the name of any Azure region available in the subscription you will use in this lab |
 
-1. Click **Next : IP Addresses**. The **Starting address** is **10.40.0.0**. The **Address space size** is **/20**. Be sure to click **Add**. 
+1. Click **Next : IP Addresses**.
+The first field **Starting address** type **10.40.0.0**. The next field **Address space size** select **/20 (4,096 address)**. 
 
-1. Click **+ Add subnet** enter the following values then click **Add**.
+1. Click to edit the "default" subnet and type this informations:
 
-    | Setting | Value |
+    | Subnet details | Value |
     | --- | --- |
+    | Subnet template | **Default** |
     | Subnet name | **subnet0** |
     | Starting address | **10.40.0.0** |
     | Subnet size | **/24 (256 addresses)** |
 
-1. Accept the defaults and click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
+1. Click Save to return, accept the defaults and click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
 
     >**Note:** Wait for the virtual network to be provisioned. This should take less than a minute.
 
@@ -75,7 +77,7 @@ In this task, you will create a virtual network with multiple subnets by using t
     | Setting | Value |
     | --- | --- |
     | Name | **subnet1** |
-    | Address range (CIDR block) | **10.40.1.0/24** |
+    | Subnet address range | **10.40.1.0/24** |
     | Network security group | **None** |
     | Route table | **None** |
 
@@ -87,36 +89,29 @@ In this task, you will deploy Azure virtual machines into different subnets of t
 
 1. In the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
 
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
+1. If prompted to select either Bash or PowerShell, select **PowerShell**.
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**.
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**. Upload **\\Allfiles\\Labs\\04\\az104-04-vms-loop-template.json** and **\\Allfiles\\Labs\\04\\az104-04-vms-loop-parameters.json** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**. Upload file  **az104-04-vms-loop-template.json** and **az104-04-vms-loop-parameters.json** into the Cloud Shell home directory.
 
-    >**Note**: You must upload each file separately. After uploading, use **dir** to ensure both files were successfully uploaded.
+    >**Note**: You must upload each file separately, **on by one**. After uploading, use **dir** to ensure both files were successfully uploaded.
 
 1. From the Cloud Shell pane, run the following to deploy two virtual machines by using the template and parameter files:
-    >**Note**: You will be prompted to provide an Admin password.
+    >**Note**: you will need change the **xxxxx** by the number of your labuser**xxxxx**@clouders.com.br.
     
    ```powershell
-   $rgName = 'az104-04-rg1'
+   $rgName = 'xxxxx-az104-04-rg1'
+   ```
 
+  ```powershell
    New-AzResourceGroupDeployment `
       -ResourceGroupName $rgName `
       -TemplateFile $HOME/az104-04-vms-loop-template.json `
       -TemplateParameterFile $HOME/az104-04-vms-loop-parameters.json
    ```
-   
-    >**Note**: This method of deploying ARM templates uses Azure PowerShell. You can perform the same task by running the equivalent Azure CLI command **az deployment create** (for more information, refer to [Deploy resources with Resource Manager templates and Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli).
 
     >**Note**: Wait for the deployment to complete before proceeding to the next task. This should take about 2 minutes.
-
-    >**Note**: If you got an error stating the VM size is not available please ask your instructor for assistance and try these steps:
-    > 1. Click on the `{}` button in your CloudShell, select the **az104-04-vms-loop-parameters.json** from the left hand side bar and take a note of the `vmSize` parameter value.
-    > 1. Check the location in which the 'az104-04-rg1' resource group is deployed. You can run `az group show -n az104-04-rg1 --query location` in your CloudShell to get it.
-    > 1. Run `az vm list-skus --location <Replace with your location> -o table --query "[? contains(name,'Standard_D2s')].name"` in your CloudShell. If there are no listed SKUs (i.e. there are no results), then you cannot deploy any D2S virtual machines in that region. You will need to find a region that will allow you to deploy D2S virtual machines. Once you have chosen a suitable location, delete the AZ104-04-rg1 resource group and restart the lab.
-    > 1. Replace the value of `vmSize` parameter with one of the values returned by the command you just run.
-    > 1. Now redeploy your templates by running the `New-AzResourceGroupDeployment` command again. You can press the up button a few times which would bring the last executed command.
 
 1. Close the Cloud Shell pane.
 
@@ -130,7 +125,7 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. In the Azure portal, search for and select **Public IP addresses**, then select **+ Create**.
 
-1. Ensure the **resource group** is **az104-04-rg1**,
+1. Ensure the **resource group** is **xxxxx-az104-04-rg1**,
 
 1. In the **Configuration Details** ensure the **name** is **az104-04-pip0**.
 
@@ -138,15 +133,15 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. In the Azure portal, search for and select **Public IP addresses**, then select **+ Create**.
 
-1. Ensure the **resource group** is **az104-04-rg1**,
+1. Ensure the **resource group** is **xxxxx-az104-04-rg1**,
 
 1. In the **Configuration Details** ensure the **name** is **az104-04-pip1**.
 
 1. Select **Review and create** and then **Create**.
 
-1. In the Azure portal, search for and select **Resource groups**, and, on the **Resource groups** blade, click **az104-04-rg1**.
+1. In the Azure portal, search for and select **Resource groups**, and, on the **Resource groups** blade, click **xxxxx-az104-04-rg1**.
 
-1. On the **az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vnet1**.
+1. On the **xxxxx-az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vnet1**.
 
 1. On the **az104-04-vnet1** virtual network blade, review the **Connected devices** section and verify that there are two network interfaces **az104-04-nic0** and **az104-04-nic1** attached to the virtual network.
 
@@ -176,9 +171,9 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. Select **Save**.
    
-1. Navigate back to the **az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vm0**, and from the **az104-04-vm0** virtual machine blade, note the public IP address entry.
+1. Navigate back to the **xxxxx-az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vm0**, and from the **az104-04-vm0** virtual machine blade, note the public IP address entry.
 
-1. Navigate back to the **az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vm1**, and from the **az104-04-vm1** virtual machine blade, note the public IP address entry.
+1. Navigate back to the **xxxxx-az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vm1**, and from the **az104-04-vm1** virtual machine blade, note the public IP address entry.
 
     >**Note**: You will need both IP addresses in the last task of this lab.
 
@@ -186,9 +181,9 @@ In this task, you will configure static assignment of public and private IP addr
 
 In this task, you will configure network security groups in order to allow for restricted connectivity to Azure virtual machines.
 
-1. In the Azure portal, navigate back to the **az104-04-rg1** resource group blade, and in the list of its resources, click **az104-04-vm0**.
+1. In the Azure portal, navigate back to the **xxxxx-az104-04-rg1** resource group blade, and in the list of its resources, click **az104-04-vm0**.
 
-1. On the **az104-04-vm0** overview blade, click **Connect**, click **RDP** in the drop-down menu, on the **Connect with RDP** blade, click **Download RDP File** using the Public IP address and follow the prompts to start the Remote Desktop session.
+1. On the **az104-04-vm0** overview blade, click **Connect**, under Native RDP click **Select** button, on the **Native RDP** blade, jump to item 3 **Download and open the RDP file** and click **Download RDP File** and follow the prompts to start the Remote Desktop session.
 
 1. Note that the connection attempt fails.
 
@@ -205,7 +200,7 @@ In this task, you will configure network security groups in order to allow for r
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **az104-04-rg1** |
+    | Resource Group | **xxxxx-az104-04-rg1** |
     | Name | **az104-04-nsg01** |
     | Region | the name of the Azure region where you deployed all other resources in this lab |
 
@@ -262,7 +257,7 @@ In this task, you will configure DNS name resolution within a virtual network by
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **az104-04-rg1** |
+    | Resource Group | **xxxxx-az104-04-rg1** |
     | Name | **contoso.org** |
 
 1. Click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
@@ -318,7 +313,7 @@ In this task, you will configure external DNS name resolution by using Azure pub
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **az104-04-rg1** |
+    | Resource Group | **xxxxx-az104-04-rg1** |
     | Name | the DNS domain name you identified earlier in this task |
 
 1. Click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
