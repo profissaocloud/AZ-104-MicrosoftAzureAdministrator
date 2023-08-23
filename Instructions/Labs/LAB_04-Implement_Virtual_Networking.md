@@ -111,7 +111,7 @@ In this task, you will deploy Azure virtual machines into different subnets of t
       -TemplateParameterFile $HOME/az104-04-vms-loop-parameters.json
    ```
 
-    >**Note**: Wait for the deployment to complete before proceeding to the next task. This should take about 2 minutes.
+>**Note**: Wait for the deployment to complete before proceeding to the next task. This should take about 2 minutes.
 
 1. Close the Cloud Shell pane.
 
