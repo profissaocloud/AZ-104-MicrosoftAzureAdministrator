@@ -42,7 +42,7 @@ In this task, you will use the Azure portal to create resource groups and create
     |Setting|Value|
     |---|---|
     |Subscription| the name of the Azure subscription where you created the resource group |
-    |Resource Group| the name of a new resource group **xxxxx-az104-03a-rg1** (Change xxxxx to your labuser)|
+    |Resource Group| select the resource group **xxxxx-az104-03a-rg1** (Change xxxxx to your labuser)|
     |Disk name| **az104-03a-disk1** |
     |Region| **(US) East US** |
     |Availability zone| **None** |
@@ -50,7 +50,7 @@ In this task, you will use the Azure portal to create resource groups and create
 
     >**Note**: When creating a resource, you have the option of creating a new resource group or using an existing one.
 
-1. Change the disk type and size to **Standard HDD** and **32 GiB**, respectively.
+1. On Size click on "Change size" and select the Storage type **Standard HDD** and Size **32 GiB**, click **OK**.
 
 1. Click **Review + Create** and then click **Create**.
 
@@ -68,7 +68,9 @@ In this task, we will move the disk resource you created in the previous task to
 
     >**Note**: This method allows you to move multiple resources at the same time. 
 
-1. Below the **Resource group** text box, click **Create new** then type **xxxxx-az104-03a-rg2** in the text box. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
+1. Below the **Resource group** text box, select the **xxxxx-az104-03a-rg2** Resource Group in the text box and click **Next**.
+1. Wait a few minutes to checking process and after click on **Next**.
+1. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
 
     >**Note**: Do not wait for the move to complete but instead proceed to the next task. The move might take about 10 minutes. You can determine that the operation was completed by monitoring activity log entries of the source or target resource group. Revisit this step once you complete the next task.
 
@@ -81,13 +83,13 @@ In this task, you will apply a resource lock to an Azure resource group containi
     |Setting|Value|
     |---|---|
     |Subscription| the name of the subscription you are using in this lab |
-    |Resource Group| click **create new** resource group and name it **xxxxx-az104-03a-rg3** |
+    |Resource Group| select resource group **xxxxx-az104-03a-rg3** |
     |Disk name| **az104-03a-disk2** |
-    |Region| the name of the Azure region where you created the other resource groups in this lab |
+    |Region| **(US) East US** the name of the Azure region where you created the other resource groups in this lab |
     |Availability zone| **None** |
     |Source type| **None** |
 
-1. Set the disk type and size to **Standard HDD** and **32 GiB**, respectively.
+1. On **Size**, click **Change size** and det the disk type and size to **Standard HDD** and **32 GiB**, respectively.
 
 1. Click **Review + Create** and then click **Create**.
 
@@ -106,7 +108,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
 1. On the **xxxxx-az104-03a-rg3** resource group blade, click **Overview**, in the list of resource group resources, select the entry representing the disk you created earlier in this task, and click **Delete** in the toolbar. 
 
-1. When prompted **Do you want to delete all the selected resources?**, in the **Confirm delete** text box, type **yes** and click **Delete**.
+1. When prompted **Do you want to delete all the selected resources?**, in the **Confirm delete** text box, type **delete** and click **Delete**.
 
 1. You should see an error message, notifying about the failed delete operation. 
 
@@ -122,7 +124,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
    >**Note**: Do not delete resources you deployed in this lab. You will be using them in the next lab of this module. Remove only the resource lock you created in this lab.
 
-1. Navigate to the **xxxxx-az104-03a-rg3** resource group blade, display its **Locks** blade, and remove the lock **az104-03a-delete-lock** by clicking the **Delete** link on the right-hand side of the **Delete** lock entry.
+1. Navigate to the **xxxxx-az104-03a-rg3** resource group blade, display its **Locks** blade, click **Refresh** on toolbar to list locks and remove the lock **az104-03a-delete-lock** by clicking the **Delete** link on the right-hand side of the **Delete** lock entry.
 
 ## Review
 
