@@ -170,21 +170,6 @@ In this task, you will configure local and global peering between the virtual ne
 
     >**Note**: This step establishes two global peerings - one from az104-05-vnet1 to az104-05-vnet2 and the other from az104-05-vnet2 to az104-05-vnet1.
 
-    >**Note**: In case you run into an issue with the Azure portal interface not displaying the virtual networks created in the previous task, you can configure peering by running the following PowerShell commands from Cloud Shell:
-    
-   ```powershell
-   $rgName = 'xxxxx-az104-05-rg1'
-   ```
-
-   ```powershell
-   $vnet1 = Get-AzVirtualNetwork -Name 'az104-05-vnet1' -ResourceGroupName $rgname
-
-   $vnet2 = Get-AzVirtualNetwork -Name 'az104-05-vnet2' -ResourceGroupName $rgname
-
-   Add-AzVirtualNetworkPeering -Name 'az104-05-vnet1_to_az104-05-vnet2' -VirtualNetwork $vnet1 -RemoteVirtualNetworkId $vnet2.Id
-
-   Add-AzVirtualNetworkPeering -Name 'az104-05-vnet2_to_az104-05-vnet1' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
-   ``` 
 
 ## Task 3: Test intersite connectivity
 
@@ -194,7 +179,7 @@ In this task, you will test connectivity between virtual machines on the three v
 
 1. In the list of virtual machines, click **az104-05-vm0**.
 
-1. On the **az104-05-vm0** blade, click **Connect**, in the drop-down menu, click **RDP**, on the **Connect with RDP** blade, click **Download RDP File** and follow the prompts to start the Remote Desktop session.
+1. On the **az104-05-vm0** blade, click **Connect**, in the "Most common" section, Native RDP, click "select", on the **Native RDP** blade, jump to item 3 and click **Download RDP File** and follow the prompts to start the Remote Desktop session.
 
     >**Note**: This step refers to connecting via Remote Desktop from a Windows computer. On a Mac, you can use Remote Desktop Client from the Mac App Store and on Linux computers you can use an open source RDP client software.
 
@@ -224,7 +209,7 @@ In this task, you will test connectivity between virtual machines on the three v
 
 1. In the list of virtual machines, click **az104-05-vm1**.
 
-1. On the **az104-05-vm1** blade, click **Connect**, in the drop-down menu, click **RDP**, on the **Connect with RDP** blade, click **Download RDP File** and follow the prompts to start the Remote Desktop session.
+1. On the **az104-05-vm1** blade, click **Connect**, in the "Most common" section, Native RDP, click "select", on the **Native RDP** blade, jump to item 3 and click **Download RDP File** and follow the prompts to start the Remote Desktop session.
 
     >**Note**: This step refers to connecting via Remote Desktop from a Windows computer. On a Mac, you can use Remote Desktop Client from the Mac App Store and on Linux computers you can use an open source RDP client software.
 
@@ -246,25 +231,8 @@ In this task, you will test connectivity between virtual machines on the three v
 
 ## Clean up resources
 
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+1. Remember to STOP all Virtual Machines :)
 
->**Note**:  Don't worry if the lab resources cannot be immediately removed. Sometimes resources have dependencies and take a longer time to delete. It is a common Administrator task to monitor resource usage, so just periodically review your resources in the Portal to see how the cleanup is going. 
-
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
-1. List all resource groups created throughout the labs of this module by running the following command:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'az104-05*'
-   ```
-
-1. Delete all resource groups you created throughout the labs of this module by running the following command:
-
-   ```powershell
-   Get-AzResourceGroup -Name 'az104-05*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 ## Review
 
