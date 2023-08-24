@@ -42,7 +42,7 @@ In this task, you will use the Azure portal to create resource groups and create
     |Setting|Value|
     |---|---|
     |Subscription| the name of the Azure subscription where you created the resource group |
-    |Resource Group| the name of a new resource group **az104-03a-rg1** |
+    |Resource Group| the name of a new resource group **xxxxx-az104-03a-rg1** (Change xxxxx to your labuser)|
     |Disk name| **az104-03a-disk1** |
     |Region| **(US) East US** |
     |Availability zone| **None** |
@@ -62,7 +62,7 @@ In this task, we will move the disk resource you created in the previous task to
 
 1. Search for and select **Resource groups**. 
 
-1. On the **Resource groups** blade, click the entry representing the **az104-03a-rg1** resource group you created in the previous task.
+1. On the **Resource groups** blade, click the entry representing the **xxxxx-az104-03a-rg1** resource group you created in the previous task.
 
 1. From the **Overview** blade of the resource group, in the list of resource group resources, select the entry representing the newly created disk, click **Move** in the toolbar, and, in the drop-down list, select **Move to another resource group**.
 
