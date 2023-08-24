@@ -49,7 +49,7 @@ In this task, you will open a Bash session in Cloud Shell.
 
 In this task, you will create a resource group and an Azure managed disk by using Azure CLI session within Cloud Shell.
 
-1. To create a resource group in the same Azure region as the **xxxxx-az104-03c-rg1** resource group you created in the previous lab, from the Bash session within Cloud Shell, change the "xxxxx" to your labuser number and run the following:
+1. To create a resource group in the same Azure region as the **xxxxx-az104-03c-rg1** resource group you created in the previous lab, from the Bash session within Cloud Shell, **change the "xxxxx" to your labuser number** and run the following:
 
    ```sh
    LOCATION=$(az group show --name 'xxxxx-az104-03c-rg1' --query location --out tsv)
