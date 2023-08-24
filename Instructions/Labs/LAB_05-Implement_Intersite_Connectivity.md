@@ -58,10 +58,6 @@ In this task, you will deploy three virtual machines, each into a separate virtu
    $rgName = 'xxxxx-az104-05-rg1'
    ```
 
-   ```powershell
-   New-AzResourceGroup -Name $rgName -Location $location1
-   ```
-
    >**Note**: The regions used above were tested and known to work when this lab was last officially reviewed. If you would prefer to use different locations, or they no longer work, you will need to identify two different regions that Standard D2Sv3 virtual machines can be deployed into.
    >
    >In order to identify Azure regions, from a PowerShell session in Cloud Shell, run **(Get-AzLocation).Location**
@@ -108,25 +104,29 @@ In this task, you will configure local and global peering between the virtual ne
     | Setting | Value|
     | --- | --- |
     | This virtual network: Peering link name | **az104-05-vnet0_to_az104-05-vnet1** |
-    | This virtual network: Traffic to remote virtual network | **Allow (default)** |
-    | This virtual network: Traffic forwarded from remote virtual network | **Block traffic that originates from outside this virtual network** |
-    | Virtual network gateway | **None** |
+    | This virtual network: Allow access to remote virtual network | **selected (default)** |
+    | This virtual network: Allow traffic to remote virtual network | **selected** |
+    | This virtual network: Allow traffic forwarded from the remote virtual network (allow gateway transit) | **unselected (default)** |
+    | This virtual network: Use Virtual network gateway or route server| **unselected (default)** |
     | Remote virtual network: Peering link name | **az104-05-vnet1_to_az104-05-vnet0** |
     | Virtual network deployment model | **Resource manager** |
-    | I know my resource ID | unselected |
+    | I know my resource ID | **unselected** |
     | Subscription | the name of the Azure subscription you are using in this lab |
     | Virtual network | **az104-05-vnet1** |
-    | Traffic to remote virtual network | **Allow (default)** |
-    | Traffic forwarded from remote virtual network | **Block traffic that originates from outside this virtual network** |
-    | Virtual network gateway | **None** |
-
+    | Virtual network: Allow access to remote virtual network | **selected (default)** |
+    | Virtual network: Allow traffic to remote virtual network | **selected** |
+    | Virtual network: Allow traffic forwarded from the remote virtual network (allow gateway transit) | **unselected (default)** |
+    | Virtual network: Use Virtual network gateway or route server| **unselected (default)** |
+    
     >**Note**: This step establishes two local peerings - one from az104-05-vnet0 to az104-05-vnet1 and the other from az104-05-vnet1 to az104-05-vnet0.
 
     >**Note**: In case you run into an issue with the Azure portal interface not displaying the virtual networks created in the previous task, you can configure peering by running the following PowerShell commands from Cloud Shell:
     
    ```powershell
-   $rgName = 'az104-05-rg1'
-
+   $rgName = 'xxxxx-az104-05-rg1'
+   ```
+   
+   ```powershell
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
 
    $vnet1 = Get-AzVirtualNetwork -Name 'az104-05-vnet1' -ResourceGroupName $rgname
@@ -160,8 +160,10 @@ In this task, you will configure local and global peering between the virtual ne
     >**Note**: In case you run into an issue with the Azure portal interface not displaying the virtual networks created in the previous task, you can configure peering by running the following PowerShell commands from Cloud Shell:
     
    ```powershell
-   $rgName = 'az104-05-rg1'
+   $rgName = 'xxxxx-az104-05-rg1'
+   ```
 
+   ```powershell
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
 
    $vnet2 = Get-AzVirtualNetwork -Name 'az104-05-vnet2' -ResourceGroupName $rgname
@@ -197,8 +199,10 @@ In this task, you will configure local and global peering between the virtual ne
     >**Note**: In case you run into an issue with the Azure portal interface not displaying the virtual networks created in the previous task, you can configure peering by running the following PowerShell commands from Cloud Shell:
     
    ```powershell
-   $rgName = 'az104-05-rg1'
+   $rgName = 'xxxxx-az104-05-rg1'
+   ```
 
+   ```powershell
    $vnet1 = Get-AzVirtualNetwork -Name 'az104-05-vnet1' -ResourceGroupName $rgname
 
    $vnet2 = Get-AzVirtualNetwork -Name 'az104-05-vnet2' -ResourceGroupName $rgname
