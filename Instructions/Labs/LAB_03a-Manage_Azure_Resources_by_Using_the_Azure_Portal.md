@@ -68,7 +68,7 @@ In this task, we will move the disk resource you created in the previous task to
 
     >**Note**: This method allows you to move multiple resources at the same time. 
 
-1. Below the **Resource group** text box, click **Create new** then type **az104-03a-rg2** in the text box. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
+1. Below the **Resource group** text box, click **Create new** then type **xxxxx-az104-03a-rg2** in the text box. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
 
     >**Note**: Do not wait for the move to complete but instead proceed to the next task. The move might take about 10 minutes. You can determine that the operation was completed by monitoring activity log entries of the source or target resource group. Revisit this step once you complete the next task.
 
@@ -81,7 +81,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
     |Setting|Value|
     |---|---|
     |Subscription| the name of the subscription you are using in this lab |
-    |Resource Group| click **create new** resource group and name it **az104-03a-rg3** |
+    |Resource Group| click **create new** resource group and name it **xxxxx-az104-03a-rg3** |
     |Disk name| **az104-03a-disk2** |
     |Region| the name of the Azure region where you created the other resource groups in this lab |
     |Availability zone| **None** |
@@ -93,9 +93,9 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
 1. Click **Go to resource**.
 
-1. On the Overview page of the Disk, click the name of the resource group, **az104-03a-rg3**.
+1. On the Overview page of the Disk, click the name of the resource group, **xxxxx-az104-03a-rg3**.
 
-1. On the **az104-03a-rg3** resource group blade, click **Locks** then **+ Add** and specify the following settings:
+1. On the **xxxxx-az104-03a-rg3** resource group blade, click **Locks** then **+ Add** and specify the following settings:
 
     |Setting|Value|
     |---|---|
@@ -104,7 +104,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
     
 1. Click **OK**    
 
-1. On the **az104-03a-rg3** resource group blade, click **Overview**, in the list of resource group resources, select the entry representing the disk you created earlier in this task, and click **Delete** in the toolbar. 
+1. On the **xxxxx-az104-03a-rg3** resource group blade, click **Overview**, in the list of resource group resources, select the entry representing the disk you created earlier in this task, and click **Delete** in the toolbar. 
 
 1. When prompted **Do you want to delete all the selected resources?**, in the **Confirm delete** text box, type **yes** and click **Delete**.
 
@@ -112,7 +112,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
     >**Note**: As the error message states, this is expected due to the delete lock applied on the resource group level.
 
-1. Navigate back to the list of resources of the **az104-03a-rg3** resource group and click the entry representing the **az104-03a-disk2** resource. 
+1. Navigate back to the list of resources of the **xxxxx-az104-03a-rg3** resource group and click the entry representing the **az104-03a-disk2** resource. 
 
 1. On the **az104-03a-disk2** blade, in the **Settings** section, click **Size + performance**, set the disk type and size to **Premium SSD** and **64 GiB**, respectively, and click **Save** to apply the change. Verify that the change was successful.
 
@@ -122,7 +122,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
    >**Note**: Do not delete resources you deployed in this lab. You will be using them in the next lab of this module. Remove only the resource lock you created in this lab.
 
-1. Navigate to the **az104-03a-rg3** resource group blade, display its **Locks** blade, and remove the lock **az104-03a-delete-lock** by clicking the **Delete** link on the right-hand side of the **Delete** lock entry.
+1. Navigate to the **xxxxx-az104-03a-rg3** resource group blade, display its **Locks** blade, and remove the lock **az104-03a-delete-lock** by clicking the **Delete** link on the right-hand side of the **Delete** lock entry.
 
 ## Review
 
