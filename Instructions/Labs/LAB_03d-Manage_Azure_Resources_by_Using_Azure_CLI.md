@@ -49,13 +49,17 @@ In this task, you will open a Bash session in Cloud Shell.
 
 In this task, you will create a resource group and an Azure managed disk by using Azure CLI session within Cloud Shell.
 
-1. To create a resource group in the same Azure region as the **az104-03c-rg1** resource group you created in the previous lab, from the Bash session within Cloud Shell, run the following:
+1. To create a resource group in the same Azure region as the **xxxxx-az104-03c-rg1** resource group you created in the previous lab, from the Bash session within Cloud Shell, change the "xxxxx" to your labuser number and run the following:
 
    ```sh
-   LOCATION=$(az group show --name 'az104-03c-rg1' --query location --out tsv)
+   LOCATION=$(az group show --name 'xxxxx-az104-03c-rg1' --query location --out tsv)
+   ```
 
-   RGNAME='az104-03d-rg1'
+   ```sh
+   RGNAME='xxxxx-az104-03d-rg1'
+   ```
 
+   ```sh
    az group create --name $RGNAME --location $LOCATION
    ```
 1. To retrieve properties of the newly created resource group, run the following:
@@ -109,28 +113,6 @@ In this task, you will managing configuration of the Azure managed disk by using
    ```sh
    az disk show --resource-group $RGNAME --name $DISKNAME --query sku
    ```
-
-## Clean up resources
-
- > **Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
-
- > **Note**:  Don't worry if the lab resources cannot be immediately removed. Sometimes resources have dependencies and take a long time to delete. It is a common Administrator task to monitor resource usage, so just periodically review your resources in the Portal to see how the cleanup is going. 
-
-1. In the Azure portal, open the **Bash** shell session within the **Cloud Shell** pane.
-
-1. List all resource groups created throughout the labs of this module by running the following command:
-
-   ```sh
-   az group list --query "[?starts_with(name,'az104-03')].name" --output tsv
-   ```
-
-1. Delete all resource groups you created throughout the labs of this module by running the following command:
-
-   ```sh
-   az group list --query "[?starts_with(name,'az104-03')].[name]" --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
-   ```
-
-    >**Note**: The command executes asynchronously (as determined by the --nowait parameter), so while you will be able to run another Azure CLI command immediately afterwards within the same Bash session, it will take a few minutes before the resource groups are actually removed.
 
 ## Review
 
