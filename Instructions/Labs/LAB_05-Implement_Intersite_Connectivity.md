@@ -144,21 +144,6 @@ In this task, you will configure local and global peering between the virtual ne
 
     >**Note**: This step establishes two global peerings - one from az104-05-vnet0 to az104-05-vnet2 and the other from az104-05-vnet2 to az104-05-vnet0.
 
-    >**Note**: In case you run into an issue with the Azure portal interface not displaying the virtual networks created in the previous task, you can configure peering by running the following PowerShell commands from Cloud Shell:
-    
-   ```powershell
-   $rgName = 'xxxxx-az104-05-rg1'
-   ```
-
-   ```powershell
-   $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
-
-   $vnet2 = Get-AzVirtualNetwork -Name 'az104-05-vnet2' -ResourceGroupName $rgname
-
-   Add-AzVirtualNetworkPeering -Name 'az104-05-vnet0_to_az104-05-vnet2' -VirtualNetwork $vnet0 -RemoteVirtualNetworkId $vnet2.Id
-
-   Add-AzVirtualNetworkPeering -Name 'az104-05-vnet2_to_az104-05-vnet0' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet0.Id
-   ``` 
 
 1. Navigate back to the **Virtual networks** blade and, in the list of virtual networks, click **az104-05-vnet1**.
 
@@ -169,17 +154,19 @@ In this task, you will configure local and global peering between the virtual ne
     | Setting | Value|
     | --- | --- |
     | This virtual network: Peering link name | **az104-05-vnet1_to_az104-05-vnet2** |
-    | This virtual network: Traffic to remote virtual network | **Allow (default)** |
-    | This virtual network: Traffic forwarded from remote virtual network | **Block traffic that originates from outside this virtual network** |
-    | Virtual network gateway | **None** |
+    | This virtual network: Allow access to remote virtual network | **selected (default)** |
+    | This virtual network: Allow traffic to remote virtual network | **selected** |
+    | This virtual network: Allow traffic forwarded from the remote virtual network (allow gateway transit) | **unselected (default)** |
+    | This virtual network: Use Virtual network gateway or route server| **unselected (default)** |
     | Remote virtual network: Peering link name | **az104-05-vnet2_to_az104-05-vnet1** |
     | Virtual network deployment model | **Resource manager** |
     | I know my resource ID | unselected |
     | Subscription | the name of the Azure subscription you are using in this lab |
     | Virtual network | **az104-05-vnet2** |
-    | Traffic to remote virtual network | **Allow (default)** |
-    | Traffic forwarded from remote virtual network | **Block traffic that originates from outside this virtual network** |
-    | Virtual network gateway | **None** |
+    | Virtual network: Allow access to remote virtual network | **selected (default)** |
+    | Virtual network: Allow traffic to remote virtual network | **selected** |
+    | Virtual network: Allow traffic forwarded from the remote virtual network (allow gateway transit) | **unselected (default)** |
+    | Virtual network: Use Virtual network gateway or route server| **unselected (default)** |
 
     >**Note**: This step establishes two global peerings - one from az104-05-vnet1 to az104-05-vnet2 and the other from az104-05-vnet2 to az104-05-vnet1.
 
