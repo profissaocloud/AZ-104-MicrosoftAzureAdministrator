@@ -426,7 +426,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg4** (if necessary create) |
+    | Resource group | **xxxxx-az104-06-rg4** |
     | Name | **az104-06-lb4** |
     | Region | name of the Azure region into which you deployed all other resources in this lab |
     | SKU  | **Standard** |
@@ -438,6 +438,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Setting | Value |
     | --- | --- |
     | Name | **az104-06-fe4** |
+    | IP version | IPv4 |
     | IP type | IP address |
     | Public IP address | Select **Create new** |
     | Gateway Load Balancer | None |
@@ -459,7 +460,6 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Name | **az104-06-lb4-be1** |
     | Virtual network | **az104-06-vnet01** |
 	| Backend Pool Configuration | **NIC** | 
-    | IP Version | **IPv4** |
 	| Click **Add** to add a virtual machine |  |
     | az104-06-vm0 | **check the box** |
     | az104-06-vm1 | **check the box** |
@@ -481,7 +481,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Protocol | **TCP** |
     | Port | **80** |
     | Interval | **5** |
-    | Close the create health probe window | **OK** | 
+    | Close the create health probe window | **Save** | 
     | Session persistence | **None** |
     | Idle timeout (minutes) | **4** |
     | TCP reset | **Disabled** |
