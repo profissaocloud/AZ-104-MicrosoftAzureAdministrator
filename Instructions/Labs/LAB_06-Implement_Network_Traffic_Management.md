@@ -91,8 +91,11 @@ In this task, you will deploy four virtual machines into the same Azure region. 
 
 1. From the Cloud Shell pane, run the following to install the Network Watcher extension on the Azure VMs deployed in the previous step:
 
+   >**Note**: Change the "xxxxx" to your labuser number
    ```powershell
-   $rgName = 'az104-06-rg1'
+   $rgName = 'xxxxx-az104-06-rg1'
+   ```
+   ```powershell
    $location = (Get-AzResourceGroup -ResourceGroupName $rgName).location
    $vmNames = (Get-AzVM -ResourceGroupName $rgName).Name
 
