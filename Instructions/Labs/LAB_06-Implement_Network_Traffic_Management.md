@@ -201,18 +201,18 @@ In this task, you will test transitivity of virtual network peering by using Net
 
 1. In the Azure portal, search for and select **Network Watcher**.
 
-1. On the **Network Watcher** blade, expand the listing of Azure regions and verify the service is enabled in region you are using. 
+1. On the **Network Watcher** blade, check that NetworkWatcher_eastus is present in list, this represent the region **(US) East US** you are using. 
 
 1. On the **Network Watcher** blade, navigate to the **Connection troubleshoot**.
 
 1. On the **Network Watcher - Connection troubleshoot** blade, initiate a check with the following settings (leave others with their default values):
 
-    > **Note**: It may take a few minutes for the resource group to be listed. If you don't want to wait, try this: delete the Network Watcher, create a new Network Watcher, and then retry Connection Troubleshoot. 
+    > **Note**: It may take a few minutes for the resource group to be listed. If you don't want to wait, try this: delete the Network Watcher, create a new Network Watcher, and then retry Connection Troubleshoot. Change the **xxxxxx** to your labuser ID.
 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1** |
+    | Resource group | **xxxxx-az104-06-rg1** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm0** |
     | Destination | **Specify manually** |
@@ -231,7 +231,7 @@ In this task, you will test transitivity of virtual network peering by using Net
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1** |
+    | Resource group | **xxxxx-az104-06-rg1** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm0** |
     | Destination | **Specify manually** |
@@ -315,7 +315,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1** |
+    | Resource group | **xxxxx-az104-06-rg1** |
     | Location | the name of the Azure region in which you created the virtual networks |
     | Name | **az104-06-rt23** |
     | Propagate gateway routes | **No** |
