@@ -333,7 +333,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Route name | **az104-06-route-vnet2-to-vnet3** |
-    | Address prefix destination | **IP Addresses** |
+    | Destination type | **IP Addresses** |
     | Destination IP addresses/CIDR ranges | **10.63.0.0/20** |
     | Next hop type | **Virtual appliance** |
     | Next hop address | **10.60.0.4** |
@@ -358,7 +358,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1** |
+    | Resource group | **xxxxx-az104-06-rg1** |
     | Region | the name of the Azure region in which you created the virtual networks |
     | Name | **az104-06-rt32** |
     | Propagate gateway routes | **No** |
@@ -401,10 +401,10 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1** |
+    | Resource group | **xxxxx-az104-06-rg1** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm2** |
-    | Destination | **Specify manually** |
+    | **Destination** type | **Specify manually** |
     | URI, FQDN or IPv4 | **10.63.0.4** |
     | Protocol | **TCP** |
     | Destination Port | **3389** |
