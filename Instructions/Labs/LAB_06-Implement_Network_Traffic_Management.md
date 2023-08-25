@@ -451,6 +451,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | SKU | Standard |
     | Tier | Regional |
     | Assignment | Static |
+    | Availability zone | Zone-redundant |
     | Routing Preference | **Microsoft network** |
 
 1. On the **Backend pools** tab, click **Add a backend pool** with the following settings (leave others with their default values). Click **+ Add** (twice) and then click  **Next:Inbound rules**. 
