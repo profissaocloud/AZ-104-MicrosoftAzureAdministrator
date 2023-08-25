@@ -48,13 +48,13 @@ In this lab, you will:
 
 1. Click **Download** and save the compressed file containing the template and parameters files to the **Downloads** folder on your lab computer.
 
-1. On the **Microsoft.ManagedDisk-*XXXXXXXXX* \| Template** blade, click **Inputs**.
+1. On the **Microsoft.ManagedDisk-*XXXXXXXXX*** blade, click **Inputs**.
 
 1. Note the value of the **location** parameter. You will need it in the next task.
 
 1. Extract the content of the downloaded file into the **Downloads** folder on your lab computer.
 
-    >**Note**: These files are also available as **\\Allfiles\\Labs\\03\\az104-03b-md-template.json** and **\\Allfiles\\Labs\\03\\az104-03b-md-parameters.json**
+    >**Note**: These files are also available as **az104-03b-md-template.json** and **az104-03b-md-parameters.json**
     
 1. Close all **File Explorer** windows.
 
@@ -94,7 +94,7 @@ In this lab, you will:
     | Setting | Value |
     | --- |--- |
     | Subscription | *the name of the Azure subscription you are using in this lab* |
-    | Resource Group | the name of a **new** resource group **xxxxx-az104-03b-rg1** |
+    | Resource Group | select the resource group **xxxxx-az104-03b-rg1** |
     | Region | the name of any Azure region available in the subscription you are using in this lab |
     | Disk Name | **az104-03b-disk1** |
     | Location | the value of the location parameter you noted in the previous task |
@@ -104,7 +104,7 @@ In this lab, you will:
     | Disk Encryption Set Type | **EncryptionAtRestWithPlatformKey** |
     | Data Access Auth Mode | None |
     | Network Access Policy | **AllowAll** |
-    | Public Network Access | Disabled |
+    | Public Network Access | **Disabled** |
 
 1. Select **Review + Create** and then select **Create**.
 
