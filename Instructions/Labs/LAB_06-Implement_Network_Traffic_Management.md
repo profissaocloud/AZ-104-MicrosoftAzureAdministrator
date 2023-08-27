@@ -529,7 +529,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg5** (create new) |
+    | Resource group | **xxxxx-az104-06-rg5** |
     | Application gateway name | **az104-06-appgw5** |
     | Region | name of the Azure region into which you deployed all other resources in this lab |
     | Tier | **Standard V2** |
@@ -571,7 +571,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
     | Protocol | **HTTP** |
     | Port | **80** |
     | Listener type | **Basic** |
-    | Error page url | **No** |
+    | Error page url | **None** |
 
 1. Switch to the **Backend targets** tab and specify the following settings (leave others with their default values). When completed click **Add** (twice).  
 
