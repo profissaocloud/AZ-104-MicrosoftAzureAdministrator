@@ -190,7 +190,7 @@ In this task, you will create a new Azure AD tenant.
     
 1. In the Azure portal, search for and select **Azure Active Directory**.
 
-    >**Note**: There is a known issue with the Captcha verification in the lab environment. If you receive the error **Creation failed. Too many requests, please try later**, do the following:<br>
+    >**Note**: There is a known issue with the Captcha verification in the lab environment. If you receive the error **Creation failed. Too many requests, please try later**, do the following:
         - Try the creation a few times.<br>
         - Check the **Manage tenant** section to ensure the tenant wasn't created in the background. <br>
         - Open a new **InPrivate** window and using the Azure Portal and try to create the tenant from there.<br>
