@@ -254,7 +254,7 @@ In this task, you will create Azure AD guest users and grant them access to reso
 
 1. Click **Review + Invite** and **Invite**. 
 
-1. Back on the **Users - All users** blade, click the entry representing the newly created guest user account.
+1. Back on the **Users - All users** blade, click **Refresh** and then click the entry representing the newly created guest user account.
 
 1. On the **az104-01b-aaduser1 - Profile** blade, click **Groups**.
 
