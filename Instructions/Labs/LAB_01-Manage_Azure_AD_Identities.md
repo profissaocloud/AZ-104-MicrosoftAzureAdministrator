@@ -252,7 +252,7 @@ In this task, you will create Azure AD guest users and grant them access to reso
     | Department (Properties tab) | **IT** |
     | Usage location (Properties tab) | **United States** |
 
-1. Click **Invite**. 
+1. Click **Review + Invite** and **Invite**. 
 
 1. Back on the **Users - All users** blade, click the entry representing the newly created guest user account.
 
