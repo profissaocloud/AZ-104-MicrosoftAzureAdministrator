@@ -133,10 +133,11 @@ In this task, you will create Azure Active Directory groups with assigned and dy
 
 1. Click **Add dynamic query**.
 
-1. On the **Configure Rules** tab of the **Dynamic membership rules** blade, create a new rule with the following settings:
+1. On the **Configure Rules** tab of the **Dynamic membership rules** blade, click on **+Add expression** to create a new rule with the following settings:
 
     | Setting | Value |
     | --- | --- |
+    | And/Or | **And** |
     | Property | **jobTitle** |
     | Operator | **Equals** |
     | Value | **Cloud Administrator** |
