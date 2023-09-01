@@ -45,7 +45,7 @@ In this task, you will open a PowerShell session in Cloud Shell.
 
 1. Ensure **PowerShell** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. Close CloudShell to use after in this lab. 
+1. Close CloudShell for now, will be used in the next lab. 
 
 ## Task 1: Create resource groups and deploy resources to resource groups
 
