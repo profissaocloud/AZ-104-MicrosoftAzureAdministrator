@@ -31,6 +31,22 @@ In this lab, we will:
 
 ## Exercise 1
 
+## Task 0: Start a PowerShell session in Azure Cloud Shell
+
+In this task, you will open a PowerShell session in Cloud Shell. 
+
+1. In the portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+
+1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
+
+    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
+
+1. If prompted, click **Create storage**, and wait until the Azure Cloud Shell pane is displayed. 
+
+1. Ensure **PowerShell** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
+
+1. Close CloudShell to use after in this lab. 
+
 ## Task 1: Create resource groups and deploy resources to resource groups
 
 In this task, you will use the Azure portal to create resource groups and create a disk in the resource group.
