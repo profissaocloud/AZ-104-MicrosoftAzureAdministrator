@@ -50,7 +50,7 @@ In this task, you will create a virtual network with multiple subnets by using t
     | Subscription | the name of the Azure subscription you will be using in this lab |
     | Resource Group | select the resource group **xxxxx-az104-04-rg1** |
     | Name | **az104-04-vnet1** |
-    | Region | the name of any Azure region available in the subscription you will use in this lab |
+    | Region | East US |
 
 1. Click **Next : IP Addresses**.
 The first field **Starting address** type **10.40.0.0**. The next field **Address space size** select **/20 (4,096 address)**. 
@@ -202,7 +202,7 @@ In this task, you will configure network security groups in order to allow for r
     | Subscription | the name of the Azure subscription you are using in this lab |
     | Resource Group | **xxxxx-az104-04-rg1** |
     | Name | **az104-04-nsg01** |
-    | Region | the name of the Azure region where you deployed all other resources in this lab |
+    | Region | East US |
 
 1. Click **Review and Create**. Let validation occur, and hit **Create** to submit your deployment.
 
