@@ -55,15 +55,11 @@ In this task, you will deploy an Azure virtual machine that you will use later i
     >**Note**: Each command below should be typed separately
 
     ```powershell
-    $location = '[Azure_region]'
+    $location = 'eastus'
     ```
   
     ```powershell
-     $rgName = 'az104-07-rg0'
-    ```
-
-    ```powershell
-    New-AzResourceGroup -Name $rgName -Location $location
+     $rgName = 'xxxxx-az104-07-rg0'
     ```
     
 1. From the Cloud Shell pane, run the following to deploy the virtual machine by using the uploaded template and parameter files:
