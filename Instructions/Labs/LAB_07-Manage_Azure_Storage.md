@@ -258,7 +258,7 @@ In this task, you will configure network access for Azure Storage.
 
     > **Note**: You can use these settings to configure direct connectivity between Azure virtual machines on designated subnets of virtual networks and the storage account by using service endpoints.
 
-1. Click the checkbox **Add your client IP address** and save the change.
+1. Click the checkbox **Add your client IP address** and click **Save** the change.
 
 1. Open another browser window by using InPrivate mode and navigate to the blob SAS URL you generated in the previous task.
 
