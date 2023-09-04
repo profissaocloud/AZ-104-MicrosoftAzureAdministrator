@@ -205,21 +205,6 @@ In this task, you will configure authentication and authorization for Azure Stor
 
     > **Note**: At this point, you do not have permissions to change the Authentication method.
 
-1. On the **az104-07-container** blade, click **Access Control (IAM)**.
-
-1. On the **Check access** tab, click **Add role assignment**.
-
-1. On the **Add role assignment** blade, specify the following settings:
-
-    | Setting | Value |
-    | --- | --- |
-    | Role | **Storage Blob Data Owner** |
-    | Assign access to | **User, group, or service principal** |
-    | Members | the name of your user account |
-
-1. Click **Review + Assign** and then **Review + assign**, and return to the **Overview** blade of the **az104-07-container** container and verify that you can change the Authentication method to (Switch to Azure AD User Account).
-
-    > **Note**: It might take about 5 minutes for the change to take effect.
 
 ## Task 5: Create and configure an Azure Files shares
 
