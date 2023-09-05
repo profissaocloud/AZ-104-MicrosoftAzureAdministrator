@@ -241,7 +241,7 @@ In this task you will scale compute for Azure virtual machines by changing their
     | --- | --- |
     | Disk name | **az104-08-vm0-datadisk-0** |
     | Storage type | **Premium SSD** |
-    | Size (GiB)| **128** |
+    | Size (GiB)| **1024** |
 
 1. Back on the **az104-08-vm0 - Disks** blade, Under **Data disks** click **+ Create and attach a new disk**.
 
@@ -251,7 +251,7 @@ In this task you will scale compute for Azure virtual machines by changing their
     | --- | --- |
     | Disk name | **az104-08-vm0-datadisk-1** |
     | Storage type | **Premium SSD** |
-    | Size (GiB)| **128 GiB** |
+    | Size (GiB)| **1024 GiB** |
 
 1. Back on the **az104-08-vm0 - Disks** blade, click **Save**.
 
