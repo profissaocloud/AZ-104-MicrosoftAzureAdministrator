@@ -393,6 +393,7 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
     | Source | **Any** |
     | Source port ranges | **\*** |
     | Destination | **Any** |
+    | Service | **Custom** |
     | Destination port ranges | **80** |
     | Protocol | **TCP** |
     | Action | **Allow** |
