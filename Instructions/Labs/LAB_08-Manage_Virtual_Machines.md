@@ -120,11 +120,11 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value |
     | --- | --- |
-    | Resource Group | **az104-08-rg01** |
+    | Resource Group | **xxxxx-az104-08-rg01** |
     | Network Interface Name | **az104-08-vm1-nic1** |
     | Public IP Address Name | **az104-08-vm1-ip** |
     | Virtual Machine Name, Virtual Machine Name1, Virtual Machine Computer Name   | **az104-08-vm1** |
-    | Virtual Machine RG | **az104-08-rg01** |    
+    | Virtual Machine RG | **xxxxx-az104-08-rg01** |    
     | Admin Username | **Student** |
     | Admin Password | **Provide a secure password**  |
     | Enable Hotpatching | **false** |
@@ -560,9 +560,9 @@ In this task, you will change the size of virtual machine scale set instances, c
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
 
 1. From the Cloud Shell pane, run the following to identify the public IP address of the load balancer in front of the Azure virtual machine scale set **az10408vmss0**.
-
+     >**Note**: You need change the "xxxxx" to your **Labs User number**.
    ```powershell
-   $rgName = 'az104-08-rg02'
+   $rgName = 'xxxxx-az104-08-rg02'
 
    $lbpipName = 'az10408vmss0-ip'
 
