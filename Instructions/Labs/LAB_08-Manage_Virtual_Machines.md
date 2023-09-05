@@ -51,11 +51,11 @@ In this task, you will deploy Azure virtual machines into different availability
     | Subscription | the name of the Azure subscription you will be using in this lab |
     | Resource group | select **xxxxx-az104-08-rg01** |
     | Virtual machine name | **az104-08-vm0** |
-    | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines |
+    | Region | East US |
     | Availability options | **Availability zone** |
     | Availability zone | **Zone 1** |
     | Image | **Windows Server 2019 Datacenter - Gen1/Gen2** |
-    | Azure Spot instance | **No** |
+    | Run with Azure Spot discount | **Unchecked** |
     | Size | **Standard D2s v3** |
     | Username | **Student** |
     | Password | **Provide a secure password** |
