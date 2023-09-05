@@ -155,7 +155,9 @@ In this task, you will install Windows Server Web Server role on the two Azure v
 
 1. On the **scripts** blade, click **Upload**.
 
-1. On the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to the **\\Allfiles\\Labs\\08** folder, select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**.
+1. On lab browser tab, locate and download the file **az104-08-install_IIS.ps1**, edit this file with notepad and change first line to **$rgName = 'az104-08-rg02'** changing the **xxxxx** to your Lab User number and save file.
+
+1. Return to Azure tab, on the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to location and select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**.
 
 1. In the Azure portal, search for and select **Virtual machines** and, on the **Virtual machines** blade, click **az104-08-vm0**.
 
