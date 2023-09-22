@@ -486,7 +486,7 @@ In this task, you will install Windows Server Web Server role on the instances o
 
 1. In the Azure portal, search for and select **Load balancers** and, in the list of load balancers, click **az10408vmss0-lb**.
 
-1. On the **az10408vmss0-lb** blade, note the value of the **Public IP address** assigned to the frontend of the load balancer, open an new browser tab, and navigate to that IP address.
+1. On the **az10408vmss0-lb** blade, select **Frontend IP configuration** under Settings category, note the value of the **Public IP** column assigned to the frontend of the load balancer, open an new browser tab, and navigate to that IP address.
 
     >**Note**: Verify that the browser page displays the name of one of the instances of the Azure virtual machine scale set **az10408vmss0**.
 
