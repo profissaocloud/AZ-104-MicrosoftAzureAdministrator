@@ -354,7 +354,7 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines different from the one you used to deploy virtual machines earlier in this lab |
     | Availability zone | **Zones 1, 2, 3** |
     | Orchestration mode | **Uniform** |
-    | Image | **Windows Server 2019 Datacenter - Gen2** |
+    | Image | **Windows Server 2019 Datacenter - x64 Gen2** |
     | Run with Azure Spot discount | **No** |
     | Size | **Standard D2s_v3** |
     | Username | **Student** |
