@@ -102,7 +102,7 @@ In this task, you will configure web app deployment settings.
 
     | Setting | Value |
     | --- | ---|
-    | User name | any globally unique name (must not contain `@` character) |
+    | User name | any globally unique name (must not contain `@` character) like **webadmin-xxxxx**|
     | Password | any password that satisfies complexity requirements|
 
     >**Note:** You will need these credentials in the next task of this lab.
