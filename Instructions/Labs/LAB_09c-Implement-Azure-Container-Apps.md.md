@@ -38,7 +38,7 @@ In the *Basics* tab, do the following actions.
     | Setting | Action |
     |---|---|
     | Subscription | Select your Azure subscription. |
-    | Resource group | Select **Create new** and enter `az104-09c-rg1`. |
+    | Resource group | Select `xxxxx-az104-09c-rg1`. |
     | Container app name |  Enter `my-container-app`. |
 
 #### Create an environment
