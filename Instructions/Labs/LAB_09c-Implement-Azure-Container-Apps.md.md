@@ -72,7 +72,7 @@ Next, create an environment for your container app.
 
 1. Click **Next: Container**.
 
-1. Check the box next to **Simple hello world container**.
+1. **Check** the box next to **Use quickstart image**.
 
 1. Select the **Review and create** button at the bottom of the page. This step may take a couple of minutes. 
 
