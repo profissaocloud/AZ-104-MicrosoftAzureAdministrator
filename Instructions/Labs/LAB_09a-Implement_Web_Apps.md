@@ -143,7 +143,7 @@ In this task, you will deploy code to the staging deployment slot.
    git push [deployment_user_name] master
    ```
 
-1. If prompted to authenticate, type the `[deployment_user_name]` and the corresponding password (which you set in the previous task).
+1. If prompted to authenticate, type the **[deployment_user_name]** and **[deployment_password]** (which you set in the previous task).
 
 1. Close the Cloud Shell pane.
 
