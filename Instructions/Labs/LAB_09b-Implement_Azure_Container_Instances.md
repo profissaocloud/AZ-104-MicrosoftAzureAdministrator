@@ -43,9 +43,9 @@ In this task, you will create a new container instance for the web application.
     | Setting | Value |
     | ---- | ---- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-09b-rg1** |
+    | Resource group | select resource group **xxxxx-az104-09b-rg1** |
     | Container name | **az104-9b-c1** |
-    | Region | the name of a region where you can provision Azure container instances |
+    | Region | East US |
     | Image Source | **Quickstart images** |
     | Image | **mcr.microsoft.com/azuredocs/aci-helloworld:latest (Linux)** |
 
@@ -53,7 +53,7 @@ In this task, you will create a new container instance for the web application.
 
     | Setting | Value |
     | --- | --- |
-    | DNS name label | any valid, globally unique DNS host name |
+    | DNS name label | any valid, globally unique DNS host name like: **container-xxxxx** |
 
     >**Note**: Your container will be publicly reachable at dns-name-label.region.azurecontainer.io. If you receive a **DNS name label not available** error message, specify a different value.
 
