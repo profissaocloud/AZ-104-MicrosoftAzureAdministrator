@@ -216,8 +216,10 @@ In this task, you will configure and test autoscaling of Azure web app.
 1. From the Cloud Shell pane, run the following to identify the URL of the Azure web app.
 
    ```powershell
-   $rgName = 'az104-09a-rg1'
-
+   $rgName = 'xxxxx-az104-09a-rg1'
+   ```
+   
+   ```powershell
    $webapp = Get-AzWebApp -ResourceGroupName $rgName
    ```
 
