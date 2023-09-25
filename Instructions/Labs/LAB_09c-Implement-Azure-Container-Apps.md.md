@@ -92,12 +92,3 @@ Next, create an environment for your container app.
 
 1. Verify you receive the **Your Azure Container Apps app is live** message.
 
-## Clean up resources
-
-If you're not going to continue to use this application, you can delete the Azure Container Apps instance and all the associated services by removing the resource group.
-
-1. Select the **my-container-apps** resource group from the *Overview* section.
-1. Select the **Delete resource group** button at the top of the resource group *Overview*.
-1. Enter the resource group name and confirm you want to delete the app. 
-1. Select **Delete**.
-1. The process to delete the resource group may take a few minutes to complete.
