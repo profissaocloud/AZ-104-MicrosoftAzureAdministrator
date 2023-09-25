@@ -40,7 +40,7 @@ In this task, you will create an Azure web app.
 
 1. Sign in to the [**Azure portal**](http://portal.azure.com).
 
-1. In the Azure portal, search for and select **App services**, and, on the **App Services** blade, click **+ Create**.
+1. In the Azure portal, search for and select **App services**, and, on the **App Services** blade, click **+ Create** and click **+Web App**.
 
 1. On the **Basics** tab of the **Create Web App** blade, specify the following settings (leave others with their default values):
 
@@ -50,9 +50,9 @@ In this task, you will create an Azure web app.
     | Resource group | Select the resource group **xxxxx-az104-09a-rg1** |
     | Web app name | any globally unique name |
     | Publish | **Code** |
-    | Runtime stack | **PHP 8.0** |
+    | Runtime stack | **PHP 8.1** |
     | Operating system | **Linux** |
-    | Region | the name of an Azure region where you can provision Azure web apps |
+    | Region | East US |
     | App service plan | accept the default configuration |
 
 1. Click **Review + create**. On the **Review + create** tab of the **Create Web App** blade, ensure that the validation passed and click **Create**.
