@@ -187,7 +187,7 @@ In this task, you will configure and test autoscaling of Azure web app.
     | Metric namespace | **standard metrics** |
     | Metric name | **CPU Percentage** |
     | Operator | **Greater than** |
-    | Metric threshold to trigger scale action | **10** |
+    | Metric threshold to trigger scale action | **2** |
     | Duration (in minutes) | **1** |
     | Time grain statistic | **Maximum** |
     | Time aggregation | **Maximum** |
@@ -231,7 +231,9 @@ In this task, you will configure and test autoscaling of Azure web app.
 
 1. Minimize the Cloud Shell pane (but do not close it) and, on the web app blade, in the Settings section, click **Scale out (App Service plan)**.
 
-1. Select **Autoscale Settings**, select the **Run history** tab, and check the **Observed resource instance count**.
+1. Under Scaling section, click on small link under red square **Manage rules based scaling**
+
+1. Select **Run history** tab, and change "Show data for last" **1 hour**, now check the **Observed resource instance count**.
 
 1. Monitor the utilization and the number of instances for a few minutes. 
 
