@@ -266,9 +266,11 @@ In this task, you will perform file restore by using Azure Recovery Services age
 
     >**Note**: Wait for the mount operation to complete. This might take about 2 minutes.
 
-1. On the **Browse And Recover Files** page, note the drive letter of the recovery volume and review the tip regarding the use of robocopy.
+1. On the **Browse And Recover Files** page, note the drive letter of the recovery volume.
 
-1. Click **Start**, expand the **Windows System** folder, and click **Command Prompt**.
+1. Click **Browse**, review the tip regarding the use of robocopyexpand and the **Windows System** folder is will open.
+
+1. Click Windows Start button, and click **Command Prompt**. 
 
 1. From the Command Prompt, run the following to copy the restore the **hosts** file to the original location (replace `[recovery_volume]` with the drive letter of the recovery volume you identified earlier):
 
