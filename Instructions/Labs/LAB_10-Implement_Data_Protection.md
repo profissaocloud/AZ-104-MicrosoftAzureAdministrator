@@ -310,7 +310,7 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
    >**Note**: You will restore this file from the Azure virtual machine-level snapshot-based backup later in this task.
 
-1. Within the Remote Desktop session to the **az104-10-vm0** Azure virtual machine, start an Edge web browser, browse to the [Azure portal](https://portal.azure.com), and sign in using your credentials.
+1. Within the Remote Desktop session to the **az104-10-vm0** Azure virtual machine, start an Edge web browser, browse to the [Azure portal](https://portal.azure.com), and sign in using your labuserxxxxx@clouders.com.br credentials..
 
 1. In the Azure portal, search for and select **Recovery Services vaults** and, on the **Recovery Services vaults**, click **az104-10-rsv1**.
 
@@ -324,7 +324,9 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
     >**Note**: You have the option of running recovery shortly after backup starts based on the application consistent snapshot.
 
-1. On the **File Recovery** blade, accept the default recovery point and click **Download Executable**.
+1. On the **File Recovery** blade, click **Select** link, select the last restore point and click OK.
+  
+1.  Click **Download Executable**.
 
     >**Note**: The script mounts the disks from the selected recovery point as local drives within the operating system from which the script is run.
 
