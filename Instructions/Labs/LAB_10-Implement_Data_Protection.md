@@ -52,11 +52,11 @@ In this task, you will deploy two virtual machines that will be used to test dif
 1. From the Cloud Shell pane, run the following to create the resource group that will be hosting the virtual machines (replace the `[Azure_region]` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines). Type each command line separately and execute them separately:
 
    ```powershell
-   $location = '[Azure_region]'
+   $location = 'east_us'
     ```
     
    ```powershell
-   $rgName = 'az104-10-rg0'
+   $rgName = 'xxxxx-az104-10-rg0'
     ```
     
    ```powershell
