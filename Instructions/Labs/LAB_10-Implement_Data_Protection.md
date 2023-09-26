@@ -204,9 +204,9 @@ In this task, you will implement file and folder backup by using Azure Recovery 
 
 1. On the **Encryption Setting** page of the **Register Server Wizard**, click **Generate Passphrase**.
 
-1. On the **Encryption Setting** page of the **Register Server Wizard**, click the **Browse** button next to the **Enter a location to save the passphrase**.
+1. Uncheck item "Save passphrase securitely to Azure Key Vault (Preview)" and accept popup screen. On **Enter a location to save passphrase** click the **Browse** button.
 
-1. In the **Browse For Folder** dialog box, select the **Documents** folder and click **OK**.
+1. In the **Browse For Folder** dialog box, select the **Student\Documents** folder and click **OK**.
 
 1. Click **Finish**, review the **Microsoft Azure Backup** warning and click **Yes**, and wait for the registration to complete.
 
